@@ -1,41 +1,68 @@
-.logo {
-    color: #166534;
-    font-size: 2rem;
-}
-.price {
-    color: #16a34a;
-    font-weight: bold;
-}
-.bestseller {
-    background-color: #fef9c3; /* เหลืองอ่อน */
-    color: #854d0e;            /* น้ำตาลทอง */
-}
-.new {
-    background-color: #dcfce7; /* เขียวอ่อน */
-    color: #166534;            /* เขียวเข้ม */
-}
-.hero-section {
-    background: linear-gradient(
-        135deg,
-        #15803d,         /* เขียวเข้ม */
-        #22c55e          /* เขียวสด */
-    );
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-}
-.site-header {
-    background-color: #166534;
-    color: white;
-    padding: 1rem 2rem;
-}
-#menu {
+body {
+    font-family: "Mitr", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     background-color: #f0fdf4;
-    padding: 3rem 2rem;
 }
-.site-footer {
-    background-color: #14532d;
-    color: rgba(255, 255, 255, 0.8);   /* ขาว 80% */
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;     /* ชิดกันนิดหน่อย */
+}
+
+/* Hero — ข้อความใหญ่กลางหน้า */
+.hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
     text-align: center;
-    padding: 2rem;
+}
+
+/* หัวข้อส่วนต่าง ๆ */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #166534;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ชื่อเมนูในการ์ด */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.3rem;
+}
+
+/* คำอธิบายเมนู */
+.card-desc {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* ราคา */
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #16a34a;
+}
+
+/* ลิงก์ใน nav */
+.main-nav a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+}
+.main-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Badge text */
+.badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;   /* ตัวพิมพ์ใหญ่ */
+    letter-spacing: 0.05em;
 }
