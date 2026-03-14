@@ -1,0 +1,318 @@
+/* --------------------------------- 
+   Global Styles & Fonts 
+   --------------------------------- */ 
+.sb-font { 
+    font-family: 'Prompt', sans-serif; 
+    /* ไล่สีจากขาวอมเหลืองอ่อนไปขาวอมชมพูอ่อน (Healing Tone) */ 
+    background: linear-gradient(to bottom right, #fcfaf8, #f5eaea);  
+    background-attachment: fixed; /* ทำให้ Gradient ไม่เลื่อนตามเวลา Scroll */ 
+    color: #3a1e0b; /* สีข้อความหลักเป็นน้ำตาลเข้ม */ 
+} 
+ 
+h1 { 
+    /* **ปรับปรุง: H1 ใช้สำหรับหัวข้อหลักใน Hero Section** */ 
+    font-family: 'Athiti', sans-serif; 
+    font-weight: 700; 
+    font-size: 2.8rem; /* ขยายขนาด H1 ให้ใหญ่ขึ้น */ 
+    color: #5a2d12; /* สีเดียวกับ H2 เพื่อความกลมกลืน */ 
+} 
+ 
+h3 { 
+    /* **ปรับปรุง: H3 ใช้สำหรับหัวข้อรองใน Hero Section** */ 
+    font-family: 'Athiti', sans-serif; 
+    font-weight: 500; 
+    font-size: 1.8rem; 
+    color: #a0522d; 
+} 
+ 
+h2 { 
+    /* H2 ใช้สำหรับหัวข้อ Section ต่างๆ */ 
+    font-family: 'Athiti', sans-serif; 
+    font-weight: 700; 
+    color: #5a2d12; 
+    padding-bottom: 5px; 
+    border-bottom: 2px solid #e9d57c;  
+    display: inline-block;  
+    margin-top: 20px !important; 
+    font-size: 2.2rem; /* ปรับขนาด H2 ให้ใหญ่ขึ้นเล็กน้อย */ 
+} 
+ 
+/* --------------------------------- 
+   Layout & Components (Responsive & Visuals) 
+   --------------------------------- */ 
+ 
+/* Navbar Style */ 
+.bg-body-tertiary { 
+    background-color: #5a2d12 !important; /* สีน้ำตาลเข้ม/ช็อกโกแลต */ 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  
+} 
+ 
+.navbar-brand img { 
+    filter: invert(100%); /* เปลี่ยนไอคอนเป็นสีขาว */ 
+} 
+ 
+.navbar-nav .nav-link { 
+    font-family: 'Prompt', sans-serif; 
+    font-weight: 500; 
+    color: #fcfaf8 !important;  
+    transition: color 0.3s, transform 0.3s; 
+} 
+ 
+.navbar-nav .nav-link:hover { 
+    color: #e9d57c !important;  
+    transform: translateY(-2px);  
+} 
+ 
+/* Hero Section */ 
+.hero-section-bg { 
+    background-color: #ECD4D4; /* สีพื้นหลังอ่อน */ 
+} 
+ 
+.book-cover-shadow { 
+    max-width: 90%; /* จำกัดขนาดปกหนังสือบนหน้าจอใหญ่ */ 
+    height: auto; 
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.4);  
+} 
+ 
+/* Media Queries สำหรับ Responsive Design ใน Hero Section */ 
+@media (min-width: 768px) { /* สำหรับ Tablet และ Desktop */ 
+    .hero-book-col { 
+        padding-left: 0; 
+        padding-right: 0; 
+    } 
+    .book-cover-shadow { 
+        max-width: 100%;  
+    } 
+} 
+@media (max-width: 767.98px) { /* สำหรับ Mobile */ 
+    .hero-book-col { 
+        order: 2; /* ย้ายรูปไว้ด้านล่างตามธรรมชาติของมือถือ */ 
+    } 
+    .fall-hightlight div:first-child { 
+        order: 1; /* ย้าย H1/H3 ไว้ด้านบนสุด */ 
+    } 
+} 
+ 
+ 
+/* Main Content Text (ส่วนข้อความเกริ่นนำ) */ 
+.center-text p { 
+    text-align: justify; /* ปรับเป็น justify เพื่อความเป็นระเบียบมากขึ้น */ 
+    margin: 20px auto 30px auto; 
+    max-width: 800px; /* จำกัดความกว้างของข้อความ */ 
+    text-indent: 30px; 
+    line-height: 1.8; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+} 
+ 
+/* --------------------------------- 
+   Benefit Section  
+   --------------------------------- */ 
+.benefit-section { 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+} 
+ 
+.benefit-text-content { 
+    /* **ปรับปรุง: แก้ไขการจัดเรียงข้อความให้สอดคล้องกับ layout** */ 
+    text-align: left; 
+} 
+ 
+.benefit-text-content .section-p { 
+    text-align: left !important; 
+    text-indent: 0px !important; /* ยกเลิกเยื้องย่อหน้าเพื่อให้ดูเป็นระเบียบในบล็อก */ 
+    line-height: 1.8; 
+    margin-bottom: 20px; 
+    padding-left: 0px !important;  
+    padding-right: 0px !important; 
+    color: #3a1e0b;  
+} 
+ 
+.benefit-icon { 
+    max-width: 100%;  
+    height: auto; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  
+    border-radius: 10px; 
+} 
+ 
+/* --------------------------------- 
+   Change Cards Section  
+   --------------------------------- */ 
+.change-cards-section { 
+    margin-top: 30px; 
+} 
+ 
+.change-card { 
+    background-color: #ffffff;  
+    border: 1px solid #f0e0e0;  
+    transition: transform 0.3s, box-shadow 0.3s; 
+} 
+ 
+.change-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.change-card h4 { 
+    /* **ปรับปรุง: ใช้ H4 ใน Change Card แทน .center-text h4** */ 
+    text-align: left; 
+    font-size: 1.25rem;  
+    font-weight: bold; 
+    color: #a0522d;  
+    margin-top: 0;  
+    margin-bottom: 10px; 
+} 
+ 
+.change-card p { 
+    line-height: 1.6; 
+    margin-bottom: 0; 
+    text-indent: 0 !important;  
+    padding-left: 0 !important; 
+    padding-right: 0 !important; 
+} 
+ 
+/* --------------------------------- 
+   Summary Box & H5 (Sriracha) 
+   --------------------------------- */ 
+h5 { 
+    font-family: 'Sriracha', sans-serif; 
+} 
+ 
+.summary-box { 
+    background-color: #fff9f9; /* สีพื้นหลังอ่อน */ 
+    border: 3px dashed #ecd4d4; /* เปลี่ยนเป็นเส้นประเพื่อความน่ารัก */ 
+    animation: pulseGlow 3s infinite alternate; /* ใช้ Animation เดิม */ 
+} 
+ 
+@keyframes pulseGlow { 
+    0% { 
+        box-shadow: 0 10px 30px rgba(160, 82, 45, 0.15); 
+    } 
+    100% { 
+        box-shadow: 0 10px 35px rgba(160, 82, 45, 0.3);  
+    } 
+} 
+ 
+.summary-box H5 { 
+    font-size: 1.25rem; 
+    font-weight: 500; 
+    line-height: 1.7; 
+    margin-bottom: 0; 
+    color: #5a2d12; /* สีน้ำตาลเข้ม */ 
+} 
+ 
+/* --------------------------------- 
+   Carousel & Accordion (Chapter Section) 
+   --------------------------------- */ 
+.chapter-preview-section { 
+    padding: 20px 0; 
+} 
+ 
+.chapter-card { 
+    background-color: #f7e8e8; 
+    border-radius: 15px !important; 
+    border: none; 
+    transition: all 0.3s; 
+} 
+ 
+.chapter-card h4 { 
+    font-family: 'Athiti', sans-serif; 
+    font-weight: 600; 
+    color: #5a2d12; 
+} 
+ 
+.chapter-card p { 
+    font-size: 1.1rem; 
+    margin-bottom: 10px; 
+    color: #a0522d; 
+} 
+ 
+.read-icon { 
+    font-size: 1.5rem; 
+    display: block; 
+} 
+ 
+.carousel-control-prev-icon, 
+.carousel-control-next-icon { 
+    filter: invert(50%) sepia(50%) saturate(1000%) hue-rotate(300deg) brightness(50%); /* เปลี่ยนเป็นสีน้ำตาลอ่อน */ 
+} 
+ 
+/* Accordion Style */ 
+.accordion-button { 
+    font-family: 'Prompt', sans-serif; 
+    font-weight: 600; 
+    background-color: #fff; 
+    color: #5a2d12; 
+    transition: background-color 0.2s; 
+} 
+ 
+.accordion-button:not(.collapsed) { 
+    color: #fff; 
+    background-color: #a0522d; /* สีน้ำตาลแดงเมื่อเปิด */ 
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125); 
+} 
+ 
+.accordion-body p { 
+    text-align: left; 
+    text-indent: 0; 
+    line-height: 1.7; 
+    margin-bottom: 0; 
+} 
+ 
+ 
+/* --------------------------------- 
+   Call to Action Section (CTA) 
+   --------------------------------- */ 
+.cta-section-bg { 
+    background-color: #f7e8e8;  
+    border-top: 5px solid #ECD4D4; 
+    border-bottom: 5px solid #ECD4D4; 
+} 
+ 
+.cta-title { 
+    font-family: 'Athiti', sans-serif; 
+    font-weight: 700; 
+    color: #5a2d12; 
+    font-size: 2.5rem; 
+} 
+ 
+.cta-subtitle { 
+    font-family: 'Prompt', sans-serif; 
+    font-weight: 400; 
+    color: #a0522d; 
+    font-size: 1.5rem; 
+} 
+ 
+.cta-btn { 
+    font-family: 'Prompt', sans-serif; 
+    font-weight: 600; 
+    border-radius: 50px;  
+    padding: 12px 30px; 
+    transition: all 0.3s ease;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.shopee-btn { 
+    background-color: #ee4d2d; 
+    color: white; 
+} 
+.lazada-btn { 
+    background-color: #1a4dff; 
+    color: white; 
+} 
+.official-btn { 
+    background-color: #a0522d; 
+    color: white; 
+} 
+ 
+.shopee-btn:hover { background-color: #d13d21; } 
+.lazada-btn:hover { background-color: #153cbf; } 
+.official-btn:hover { background-color: #8c4728; } 
+ 
+ 
+/* Footer */ 
+.footer-custom { 
+    background-color: #ECD4D4; 
+    color: #5a2d12; 
+    font-weight: 500; 
+}
