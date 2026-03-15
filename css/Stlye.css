@@ -85,6 +85,9 @@ body{
     text-align: center;
 }
 
-.host :hover{
-    transition: 0.875rem;
+.host:hover {
+    transform: scale(1.02) translate(0);
+    box-shadow: 0 4px 20px rgba(6, 99, 59, 0.227);
+    border: #074b36;
 }
+
