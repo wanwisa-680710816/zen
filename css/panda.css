@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #374151;
+    background-color: #f0fdf4;
+}
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #40826D;
+}
+
+.nav-link{
+    color: #f0fdf4;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.navbar-brand{
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.dropdown-item{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contanier{
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card{
+    margin-top: 50;
+}
+
+.card h1{
+    color: #074b36;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    line-height: 1.8;
+    font-size: medium;
+}
+
