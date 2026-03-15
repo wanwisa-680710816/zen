@@ -1,4 +1,5 @@
 body{
+    margin: 0;
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -6,11 +7,41 @@ body{
     line-height: 1.8;
     color: #374151;
     background-color: #f0fdf4;
-    margin: 0;
 }
 
 
+.navbar{
+    width: 100%;
+}
+
+.banner{
+    background: #4df6cc2b;
+    padding: 60px 0 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner p{
+    color: #022d28;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.banner h1{
+    color: #022d28;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.navbar{
+    background-color: #40826D;
+}
 .navbar-brand{
+    color: #ffffff;
     font-family: "Kanit", sans-serif;
     font-weight: 500;
     font-style: bold;
@@ -24,4 +55,32 @@ body{
     font-style: normal;
     font-size: 16px;
     line-height: 1.8;
+}
+
+.contanier{
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.toc-card{
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #d8ffe4;
+    box-shadow: 0 4px 20px rgba(57, 57, 57, 0.6);
+    padding-top: -30px;
+    position: relative;
+    margin-left: 50;
+    margin-right: 50;
+}
+
+.toc-card p{
+    color: #022d28bf;
+    font-family: "Kanit", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 16;
+    text-align: center;
 }
