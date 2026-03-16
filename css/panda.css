@@ -6,7 +6,6 @@ body{
     font-size: 16px;
     line-height: 1.8;
     color: #374151;
-    background-color: #f0fdf4;
 }
 
 div{
@@ -45,16 +44,16 @@ div{
     line-height: 1.8;
 }
 
-.contanier{
+.card{
+    margin-top: 40;
     width: 100%;
     padding-right: calc(var(--bs-gutter-x)* .5);
     padding-left: calc(var(--bs-gutter-x)* .5);
     margin-right: auto;
     margin-left: auto;
-}
-
-.card{
-    margin-top: 50;
+    transition: 0.3s;
+    border-color: #074b36;
+    border: 5px;
 }
 
 .card h1{
@@ -64,6 +63,32 @@ div{
     font-weight: 500;
     font-style: bold;
     line-height: 1.8;
-    font-size: medium;
+    font-size: 36px;
 }
 
+.pic1 {
+    margin-left: 30;
+    margin-bottom: 26;
+    margin-top: -200;
+}
+
+.card:hover{
+    transform: scale(1.01) translate(0);
+    box-shadow: 0 4px 20px rgba(6, 99, 59, 0.227);
+    border: #074b36;
+}
+
+.card p{
+    margin-left: 320;
+    color: #074b36;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    line-height: 1.8;
+    font-size: 20;
+}
+
+.pic2 {
+    margin-top: -120;
+    margin-left: 380;
+}
