@@ -1,80 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Leaf & Bean CaféGIT</title>
-    <link rel="stylesheet" href="css/stlye.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUZOOOO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<body>
     
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body >
-    <header class="site-header" id="top">
-        <h1 class="logo"> SUZOOOOO </h1>
-        <nav class="main-nav">
-            <a href= "suzooooosub1.html">เมนู</a>
-        </nav>
-    </header>
-    <main>
-    <!-- ส่วน Hero -->
-    <section class="hero-section">
-        <h2>กาแฟดี ๆ เริ่มต้นที่นี่</h2>
-        <p>คัดสรรเมล็ดกาแฟคุณภาพจากดอยสูง ชงสดใหม่ทุกแก้ว</p>
-    </section>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>   
+    <div class="container-fluid">
+        <a class="navbar-brand display-1 fw-bold" href="#">SUZOOOO</a>
+        <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <!-- ส่วนเมนู -->
-    <section id="menu">
-        <h2 class="section-title">เมนูแนะนำ</h2>
-        <!-- การ์ดเมนูที่ 1 -->
-            <div class="menu-grid">
-                <div class="card">
-                    <h3 class="card-title">☕ Espresso</h3>
-                    <p class="card-desc">เข้มข้น หอมกรุ่น คั่วกลางจากดอยช้าง</p>
-                    <p class="price">ราคา: <span>฿55</span></p>
-                </div>
-                <!-- การ์ดที่ 2 -->
-                <div class="card featured">
-                    <h3 class="card-title">🍵 Matcha Latte <span>BEST SELLER</span></h3>
-                    <p class="card-desc">ชาเขียวเกรดพรีเมียมจากอุจิ</p>
-                    <p class="price">฿75</p>
-                    <span class="badge bestseller">BEST SELLER</span>
-                </div>
-                <!-- การ์ดที่ 3 -->
-                <div class="card">
-                    <h3 class="card-title">🧊 Cold Brew</h3>
-                    <p class="card-desc">สกัดเย็น 18 ชั่วโมง นุ่มลึก</p>
-                    <p class="price">฿65</p>
-                    <span class="badge new">NEW</span>
-                </div>
+<!-- Carousel พื้นฐาน -->
+<style>
+#myCarousel .carousel-item img{
+   height: clamp(200px, 50vw, 500px);
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: auto;
+}
+</style>
+<div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+
+    <!-- Indicators (จุดบอกสไลด์) -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active"data-bs-interval="10000">
+            <img src="https://i.ibb.co/rKHBf2py/IMG-3903.jpg" class="d-block w-100" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="text-center fw-bold ">welcome to SUZOOOO</p>
+                <p class="fst-italic">สัตว์ต่างๆในมหาวิทยาลัยศิลปากร
+                </p>
             </div>
-        </section>
+        </div>
+        <div class="carousel-item"data-bs-interval="5000">
+            <img src="https://picsum.photos/800/400?random=2" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item"data-bs-interval="5000">
+            <img src="https://picsum.photos/800/400?random=3" class="d-block w-100" alt="Slide 3">
+        </div>
+    </div>
 
-    <div class="content-wrapper">
-        <article id="about">
-            <h2 class="section-title">เรื่องราวของเรา</h2>
-            <p>Leaf & Bean Café เกิดจากความรักในกาแฟ
-                ของกลุ่มเพื่อนชาวศิลปากร ที่อยากสร้างพื้นที่
-                สบาย ๆ ให้ทุกคนได้มานั่งจิบกาแฟดี ๆ</p>
-            <figure>
-                <img src="cafe-interior.jpg" 
-                     alt="บรรยากาศภายในร้าน">
-                <figcaption>บรรยากาศสบาย ๆ ภายใน Leaf & Bean Café</figcaption>
-            </figure>
-        </article>
+    <!-- ปุ่มเลื่อน -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+</div>
 
-        <aside class="sidebar">
-            <h3>🕐 เวลาเปิด-ปิด</h3>
-            <p>จันทร์ - ศุกร์: 7:00 - 20:00</p>
-            <p>เสาร์ - อาทิตย์: 8:00 - 21:00</p>
-            <p>สถานะ: <span>เปิดอยู่</span></p>
-        </aside>
-    </main>
+<div class="container">
+  <div class="row g-3">
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card shadow-lg">
+        <a class="d-block rounded overflow-hidden ratio ratio-1x1"
+           href="https://l.facebook.com/l.php?u=https%3A%2F%2F807.vercel.app%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExb3oxWEZoY1V0dFdmSWZIS3NydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7yxCO4WvpRGiQt6k9JnraRidfXSgIeB05Z9fJ_U40JrN9Zcrf8jClsP-STPQ_aem_V0xUCeNOK-ppoqexyXDaoQ&h=AT6Tgf9cHR95lWRr5d0brzwXTJ5n8WSH0MckojusZ79vwpQy1weCODCiBs4ROpqZMzkeNFJGQ-I74z7TFr9Voi4ZUIoW-fxzAWcaVrygBU0x-qFXkqUaRH-5D_sm2WA">
+          <img src="https://i.ibb.co/3m2C1yHF/IMG-3892.jpg"
+               class="w-100 h-100"
+               style="object-fit: cover;"
+               alt="">
+        </a>
+      </div>
+    </div>
 
-    <footer class="site-footer" id="contact">
-        <p>&copy; 2026 Leaf & Bean Café</p>
-        <p>📍 ม.ศิลปากร วิทยาเขตสนามจันทร์ จ.นครปฐม</p>
-    </footer>
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card shadow-lg">
+        <a class="d-block rounded overflow-hidden ratio ratio-1x1"
+           href="https://zen-iota-ten.vercel.app/suzooooosub1.html?fbclid=IwY2xjawQiDRdleHRuA2FlbQIxMABicmlkETFvejFYRmhjVXR0V2ZJZkhLc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvP_FDdHuksqu-MVe7ryWma0Gg8u5IeoKncqU5M9bzxAptNTYPIIBmNWFXRy_aem_t53y7wSLpgfoc1ibVLt2lA">
+          <img src="https://i.ibb.co/6pq1P6D/IMG-3893.jpg"
+               class="w-100 h-100"
+               style="object-fit: cover;"
+               alt="">
+        </a>
+      </div>
+    </div>
 
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card shadow-lg">
+        <a class="d-block rounded overflow-hidden ratio ratio-1x1"
+           href="https://web-six-eosin-87.vercel.app/?fbclid=IwY2xjawQiDUpleHRuA2FlbQIxMABicmlkETFvejFYRmhjVXR0V2ZJZkhLc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHoiKjx-n3hEXdz5uWYsVDfMUF7om93xP3EZwxetG4qcs1W7iyYHAWEv6hd-Z_aem_kePWDB4U_eonTnitHnDj4A">
+          <img src="https://i.ibb.co/1YZgW6qj/IMG-3905.jpg"
+               class="w-100 h-100"
+               style="object-fit: cover;"
+               alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card shadow-lg">
+        <a class="d-block rounded overflow-hidden ratio ratio-1x1"
+           href="https://bird-six-psi.vercel.app/?fbclid=IwY2xjawQiDWNleHRuA2FlbQIxMABicmlkETFvejFYRmhjVXR0V2ZJZkhLc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHuU1-cWxquKnvafeRxKFJRrTcqt2bY9k3_q40KvkN8maZ2-p4PZAs3WBIB4S_aem_p1YtkuGy6rGDBeiuES_IZg">
+          <img src="https://i.ibb.co/C5LS8vKD/IMG-3895.jpg"
+               class="w-100 h-100"
+               style="object-fit: cover;"
+               alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
