@@ -131,4 +131,14 @@ footer{
     font-style: bold;
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .sidebar {
+        display: none; /* ซ่อนบางอย่างบนมือถือ */
+    }
+}
+
 
