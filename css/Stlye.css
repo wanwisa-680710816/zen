@@ -6,7 +6,7 @@ body{
     font-size: 16px;
     line-height: 1.8;
     color: #374151;
-    background-color: #f0fdf4;
+    background: rgba(237, 255, 250, 0.51);
 }
 
 div{
@@ -19,8 +19,8 @@ div{
 }
 
 .banner{
-    background: #4df6cc2b;
-    padding: 60px 0 50px;
+    background: rgba(237, 255, 250, 0.51);
+    padding: 40px 0 30px;
     position: relative;
     overflow: hidden;
 }
@@ -83,7 +83,7 @@ div{
 .toc-card p{
     color: #022d28bf;
     font-family: "Kanit", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     margin: 16;
     text-align: center;
@@ -92,7 +92,8 @@ div{
 .host:hover {
     transform: scale(1.02) translate(0);
     box-shadow: 0 4px 20px rgba(6, 99, 59, 0.227);
-    border: #074b36;
+    border-color: #074b36;
+    background-color: rgba(239, 255, 252, 0.521);
 }
 
 .contanier1{
@@ -105,9 +106,29 @@ div{
 }
 
 .card{
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(237, 255, 250, 0.51);
     border-radius: 15px;
     text-align: center;
     transition: 0.3s;
 }
+
+.main-contetnt{
+    background: rgba(237, 255, 250, 0.51);
+}
+
+.col{
+    margin-left: 60;
+    margin-right: 60;
+}
+
+footer{
+    background-color: #40826D;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+}
+
 
