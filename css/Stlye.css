@@ -137,7 +137,7 @@ footer{
         padding: 10px;
     }
     .sidebar {
-        display: none; /* ซ่อนบางอย่างบนมือถือ */
+        display: none; 
     }
 }
 

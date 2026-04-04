@@ -88,6 +88,16 @@ div{
     font-size: 20;
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
 .pic2 {
     margin-top: -120;
     margin-left: 380;
